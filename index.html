@@ -93,7 +93,7 @@
     <div class="portfolio-layer">
         <h4>CineStream</h4>
         <p>A full-stack movie streaming platform where users can browse, search, and watch trailers. Includes features like JWT authentication, similar content suggestions, and a responsive UI.</p>
-        <a href="#"><i class='bx bx-link-external'></i></a>
+        <a href="https://github.com/VikasVerma-1/CineStream-Netflix-Clone"><i class='bx bx-link-external'></i></a>
     </div>
 </div>
 
@@ -102,7 +102,7 @@
                     <div class="portfolio-layer">
                         <h4>Perssonal Portfolio</h4>
                         <p>In this project I try making my own portfolio website for myself. Showcase my projects, my social media handles, my experience on the website.</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                        <a href="https://personal-portfolio-nu-bay-66.vercel.app/"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -110,7 +110,7 @@
                     <div class="portfolio-layer">
                         <h4>Project Manager SIH(2023)</h4>
                         <p>In this project I try deployed project manager website where you can add projects and teams member, Showcase your work .</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/VikasVerma-1/Project-Management-SIH-2023-"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -118,7 +118,7 @@
                     <div class="portfolio-layer">
                         <h4>Potato Leaf Disease detection</h4>
                         <p>In this project I try detect the Potato Leaf Disease detection by using machine learning predication model.And deployed in streamlit python</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/VikasVerma-1/Potato-Leaf-Disease-Detection-Using-Deep-Learning"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -127,7 +127,7 @@
                         <h4>Airlines Reservation System</h4>
                         <p>In this project Developed an intuitive user interface for flight searches, seat selection, and secure transactions, print tickets,
                             enhancing the overall customer experience. Employed JavaScript for dynamic content updates and validation, interactive booking process.</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/VikasVerma-1/Airlines-Reservation-System"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -135,7 +135,7 @@
                     <div class="portfolio-layer">
                         <h4>Gym and Fitness Website </h4>
                         <p>In this project We create a Website for public to consult with trainer and meal recommendation, timetable, Contact Page and Location </p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/VikasVerma-1/Gym-and-Fitness-Management-"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
                 <div class="portfolio-box">
@@ -143,33 +143,33 @@
                     <div class="portfolio-layer">
                         <h4>Currency Coverter System</h4>
                         <p>In this project we can create a currency converter of different country by using api and frontend</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/VikasVerma-1/Currency-Converter-System"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
                 
             </div>
         </section>
-        <section class="contact"id="contact">
-            <h2 class="heading">Contact<span>ME!</span></h2>
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>ME!</span></h2>
 
-            <form action="#" name="submit-to-google-sheet">
-                <div class="input-box">
-                    <input type="text" name="Name" placeholder="Full Name">
-                    <input type="email" name="Email Address" placeholder="Email Address">
-                </div>
-                <div class="input-box">
-                    <input type="number" name="Mobile Number"placeholder="Mobile Number">
-                    <input type="text"name="Email Subject" placeholder="Email Subject">
-                </div>
-                <textarea name="Your Message" id="" cols="30" rows="10"placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message"class="btn">
-            </form>
-            <span id="msg"></span>
-        </section>
+    <form name="submit-to-google-sheet">
+        <div class="input-box">
+            <input type="text" name="FullName" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email Address" required>
+        </div>
+        <div class="input-box">
+            <input type="number" name="MobileNumber" placeholder="Mobile Number" required>
+            <input type="text" name="Subject" placeholder="Email Subject" required>
+        </div>
+        <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+    <span id="msg"></span>
+</section>
 
         <footer class="footer">
             <div class="footer-text">
-                <p>Copyright &copy; 2024 by Vikas Verma | All Rights Reserved.</p>
+                <p>Copyright &copy; 2025 by Vikas Verma | All Rights Reserved.</p>
             </div>
             <div class="footer-iconTop">
                 <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
@@ -181,23 +181,25 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="script.js"></script>
         <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzFPVGxI-75Ilkm2z_EMuI9ubPlp8-7dQmMzzdPiIunLPPzj3bcY1ohMdT_DfZ3zPwhTA/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg=document.getElementById("msg")
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML="Message sent successfully"
-                    setTimeout(function(){
-                        msg.innerHTML=""
-                    },5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
-        
+  const scriptURL = 'PASTE_YOUR_DEPLOYED_SCRIPT_URL_HERE';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(() => msg.innerHTML = "", 5000);
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        msg.innerHTML = "Something went wrong. Please try again.";
+      });
+  });
+</script>
+
+  
     </body>
 </html>
