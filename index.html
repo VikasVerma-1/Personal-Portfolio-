@@ -152,18 +152,19 @@
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>ME!</span></h2>
 
-    <form name="submit-to-google-sheet">
-        <div class="input-box">
-            <input type="text" name="FullName" placeholder="Full Name" required>
-            <input type="email" name="Email" placeholder="Email Address" required>
-        </div>
-        <div class="input-box">
-            <input type="number" name="MobileNumber" placeholder="Mobile Number" required>
-            <input type="text" name="Subject" placeholder="Subject" required>
-        </div>
-        <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </form>
+   <form name="submit-to-google-sheet">
+    <div class="input-box">
+        <input type="text" name="FullName" placeholder="Full Name" required>
+        <input type="email" name="EmailAddress" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+        <input type="tel" name="MobileNumber" placeholder="Mobile Number" required>
+        <input type="text" name="EmailSubject" placeholder="Subject" required>
+    </div>
+    <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" class="btn">
+</form>
+
     <span id="msg"></span>
 </section>
 
