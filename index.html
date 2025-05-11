@@ -159,7 +159,7 @@
         </div>
         <div class="input-box">
             <input type="number" name="MobileNumber" placeholder="Mobile Number" required>
-            <input type="text" name="Subject" placeholder="Email Subject" required>
+            <input type="text" name="Subject" placeholder="Subject" required>
         </div>
         <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
         <input type="submit" value="Send Message" class="btn">
@@ -189,7 +189,7 @@
     e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        msg.innerHTML = "Message sent successfully!";
+        msg.innerHTML = "Message sent successfully! Thank you for Contacting Mr Vikas Verma";
         setTimeout(() => msg.innerHTML = "", 5000);
         form.reset();
       })
