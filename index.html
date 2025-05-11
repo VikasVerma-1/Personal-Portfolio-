@@ -149,22 +149,21 @@
                 
             </div>
         </section>
-<section class="contact" id="contact">
+        <section class="contact" id="contact">
     <h2 class="heading">Contact <span>ME!</span></h2>
 
-   <form name="submit-to-google-sheet">
-    <div class="input-box">
-        <input type="text" name="FullName" placeholder="Full Name" required>
-        <input type="email" name="EmailAddress" placeholder="Email Address" required>
-    </div>
-    <div class="input-box">
-        <input type="tel" name="MobileNumber" placeholder="Mobile Number" required>
-        <input type="text" name="EmailSubject" placeholder="Subject" required>
-    </div>
-    <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-    <input type="submit" value="Send Message" class="btn">
-</form>
-
+    <form name="submit-to-google-sheet">
+        <div class="input-box">
+            <input type="text" name="FullName" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email Address" required>
+        </div>
+        <div class="input-box">
+            <input type="number" name="MobileNumber" placeholder="Mobile Number" required>
+            <input type="text" name="Subject" placeholder="Email Subject" required>
+        </div>
+        <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
     <span id="msg"></span>
 </section>
 
@@ -182,6 +181,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="script.js"></script>
         <script>
+            
   const scriptURL = 'https://script.google.com/macros/library/d/1U8oL4vOna44qW3-hojlvgGhIrZt_lB1SGZBI5cDUd7TAcfdlSeAFxQHe/1';
   const form = document.forms['submit-to-google-sheet'];
   const msg = document.getElementById("msg");
